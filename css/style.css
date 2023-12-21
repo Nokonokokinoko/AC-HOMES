@@ -1,0 +1,1192 @@
+@charset "utf-8";
+
+/* AC HOMESコーポレートサイト */
+
+body {
+ font-family: 'Montserrat', sans-serif, "Noto Sans JP", 'Zen Kaku Gothic Antique', sans-serif,'Zen Kaku Gothic New', sans-serif,"メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, sans-serif;
+ ;
+}
+
+html {
+  font-size: 62.5%;
+  /* overflow-x: hidden; */
+}
+
+.visual_img p {
+  
+}
+
+
+header main footer {
+  font-family: 'Noto Sans JP',sans-serif;
+}
+
+
+/* -----トップページ　index----- */
+
+.wrapper {
+  width: 1536px;
+  /* background-color: #fff; */
+  
+  
+}
+
+.wrapper a {
+  text-decoration: none;
+}
+
+main {
+  margin: 0 auto;
+
+}
+header .main {
+  display: flex;
+  justify-content: space-around;
+}
+
+header {
+width: 1536px;
+background-color: #777777;
+position: -webkit-sticky;
+position: fixed;
+z-index: 20;
+padding: 10px 0px 10px 10px;
+}
+
+
+header h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-top: 10px;
+  /* padding: 10px; */
+}
+
+header h1 a {
+  color: #fff;
+  letter-spacing: 0.2em;
+  font-weight: 300;
+}
+
+
+header h1 a:hover {
+  color: #313030;
+}
+
+
+/* 以下、グローバルナビ */
+.global {
+width:1000px;
+margin-top: 10px;
+margin-right: 100px;
+/* background-color: #00F; */
+
+
+}
+
+.global ul {
+display: flex;
+justify-content: space-around;
+
+}
+
+
+.global li a  {
+  line-height: 1.4;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-align: center;
+  display: block;
+  width:190px;
+  transition: .4s;
+  text-shadow: 1px 1px 3px #555555;
+
+}
+
+.global li a:hover {
+  background-color: #313030;
+  color: #fff;
+}
+
+
+/* 以下、上部ナビ */
+nav.upper {
+  font-size: 1.2rem;
+  position: relative;
+  margin-right: 50px;
+  display: none;
+  
+}
+
+nav.upper ul {
+  width: 100%;
+  display: flex; 
+  justify-content: flex-end;
+  position: absolute;
+  top: -70px;
+  /* background-color: #62694B; */
+
+}
+nav.upper ul li a {
+  color:#fff;
+  transition: .2s;
+;
+}
+
+nav.upper ul li{
+ margin-right: 30px;
+}
+
+
+
+nav.upper ul li a:hover {
+  color: #a1a1a1;
+}
+
+
+/* 以下、キービジュアル */
+
+.index .visual_img {
+  width: 1536px;
+  height: 864px;
+  background-image: url(../img/keyvisual2.jpg);
+  background-size: cover;
+  padding-top: 350px;
+  padding-left: 150px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.index .visual_img p img {
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  
+}
+
+.index .visual_img p {
+  font-family: '"Noto Sans JP';
+  font-size: 3rem;
+  line-height: 100px;
+  font-weight: 100;
+  color: #fff;
+  /* text-shadow: 2px 2px 3px #000; */
+  
+  
+}
+
+/* 以下、サイドナビ */
+.side {
+position: -webkit-sticky;
+position: fixed;
+right:0;
+margin-top: 460px;
+z-index:10;
+text-align: center;
+}
+
+.side .tenjijyo, .side .online{
+width: 80px;
+height: 80px;
+background-color: #7C7D6F;
+margin-top: 5px;
+}
+
+
+.side .tenjijyo p, .side .online p{
+  font-size: 1.1rem;
+  font-weight:500;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 0.2em;
+}
+
+
+.side .tenjijyo .tenjijyo_icon:hover, .side .online .online_icon:hover {
+  background-color: #555555;
+
+}
+
+
+main h2, main h3 {
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 2;
+  letter-spacing: 0.1em;
+  color: #000;
+  text-align: center;
+  /* background-color: #62694B; */
+  margin-top: 50px;
+
+}
+
+.index h2 .index h3 {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* ピックアップ */
+
+.pickup {
+  width:100%;
+  height: 400px;
+  margin-top: 100px;
+  position: relative;
+  
+
+}
+
+
+.pickup h2 {
+  position: relative;
+}
+
+.pickup h2:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -10%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  display: inline-block;
+  width: 100px;
+  height: 2px;
+  background-color: #777777;
+}
+
+.pickup::before{
+  position: absolute;
+  content: "";
+  top: 6%;
+  background-color: #E3E3E3;
+  width: 100%;
+  height:400px;
+}
+
+.pickup .showcase {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 60px;
+}
+
+.pickup .showcase a{
+  z-index: 2;
+
+}
+
+.pickup .showcase a:hover {
+  opacity:0.7;
+  filter:Alpha(opacity=60);
+  transition: 0.3s;
+}
+
+/* AC HOMESについて */
+
+.about {
+  margin-top: 120px;
+}
+.about h2 {
+  position: relative;
+}
+
+.about h2:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -10%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  display: inline-block;
+  width: 130px;
+  height: 2px;
+  background-color: #777777;
+}
+
+.about p{
+  font-size: 2rem;
+  font-family:'Zen Kaku Gothic New';
+  line-height: 3;
+  letter-spacing: 0.1em;
+  text-align: center;
+  /* background-color: #585858; */
+  padding-top: 30px;
+}
+
+.about .showcase {
+  display: flex;
+  justify-content: space-around;
+  width: 1200px;
+  margin: 0 auto;
+  /* padding-top:50px; */
+}
+
+
+.about .showcase .box {
+  width: 350px;
+  height: 250px;
+  background-color: #e7e7e7;
+  text-align: center;
+margin-top: 40px;
+padding: 20px 30px 30px 30px;
+box-sizing: border-box;
+
+}
+
+.about .showcase .box p {
+  font-size: 1.4rem;
+  text-align: justify;
+  line-height: 2.5;
+
+
+}
+
+
+.about .showcase .box h5 {
+  font-family: 'Zen Kaku Gothic New';
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: ;
+
+  /* background-color:#00F ; */
+  margin-top: 40px;
+}
+
+.about .showcase .box h6 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-top: 10px;
+
+}
+
+
+/* 以下housing */
+
+
+.sumai {
+  width:100%;
+  height: 550px;
+  margin-top: 100px;
+  position: relative;
+}
+
+
+.sumai h3 {
+  position: relative;
+  /* z-index: 10; */
+  text-align: center;
+}
+
+
+.sumai h3:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -10%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  display: inline-block;
+  width: 120px;
+  height: 2px;
+  background-color: #777777;
+}
+
+
+.sumai::before {
+  position: absolute;
+  content: "";
+  top: 6%;
+  background-color:#e7e7e7;
+  width: 100%;
+  height:550px;
+}
+
+.sumai figure {
+  /* background-color: #0f0; */
+}
+.sumai .showcase {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: auto;
+  /* right: 0;
+  left: 0; */
+  padding-top:50px;
+  /* background-color: #00F; */
+
+}
+
+
+.sumai .bunjyo {
+  /* background-color: #000; */
+  position: absolute;
+  width: 400px;
+  right: 00%; 
+}
+
+.sumai .border1, .sumai .border2 {
+  width: 350px; 
+  background-color: rgba(250, 250, 250, 0.8);
+  position: relative;
+  margin-top: -70px;
+  color: #313030;
+  margin: -70px auto 0 auto;
+
+}
+
+
+.sumai figcaption {
+  font-size: 2rem;
+  line-height: 2;
+  padding: 20px 20px 10px 20px;
+  text-align: center;
+}
+
+.sumai .border1 p, .sumai .border2 p {
+  font-size: 1.4rem;
+  line-height: 2.4;
+  padding: 0 20px 20px 20px;
+}
+
+
+
+/* 以下、housingのボタン */
+.sumai .btn p {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  left: 0;
+  width: 100px;
+  margin: auto;
+  letter-spacing: 0.3em;
+   font-size: 1.2rem;
+  background-color: #777777;
+
+  margin-top: 24px;
+  padding: 10px 15px 10px 30px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 1px 1px 3px #313030;
+
+  
+}
+
+.sumai .btn p:hover {
+  background-color: #313030;
+
+  transition: 0.2s;
+}
+
+
+/* 以下、housingのホバー */
+
+.sumai .showcase figure .cyumon:hover {
+  opacity:0.7;
+  filter:Alpha(opacity=60);
+  transition: 0.3s;
+}
+
+.sumai .showcase figure .bunjyo:hover {
+  opacity:0.7;
+  filter:Alpha(opacity=60);
+  transition: 0.3s;
+}
+
+
+/* 以下ニュース */
+
+
+.news {
+  margin: 0 auto;
+  margin-bottom: 10px;
+  margin-top: 120px;
+  width: 70%;
+  font-size: 1.4rem;
+}
+
+.news h3 {
+  position: relative;
+}
+
+.news h3:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -10%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  display: inline-block;
+  width: 80px;
+  height: 2px;
+  background-color: #777777;
+}
+
+
+.news-list {
+  list-style: none outside;
+  margin: 0;
+  padding: 0;
+  margin-top: 40px;
+  margin-bottom: 100px;
+}
+
+
+
+.news .news-list li.item a .title{
+  color: #313030;
+  text-decoration: none;
+}
+
+.news-list li.item a .title:hover {
+  color: #9e9d9d;
+  /* text-decoration: none; */
+}
+
+.news .news-list p.date {
+  font-size: 1.4rem;
+} 
+
+
+
+/* ニュースの下線 */
+.news-list li.item{
+  height: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  text-decoration: none;
+  color: #333;
+  border-bottom: 1px solid #CCC;
+  padding: 20px 20px;
+
+}
+
+
+.news-list .item:first-child li.item{
+  border-top: 1px solid #CCC;
+}
+
+.news-list .item .date{
+  margin: 0;
+  min-width: 140px;
+  font-size: 16px;
+  color: #313030;
+  padding: 0 20px 0 0;
+}
+.news-list .item .category{
+  margin: 0;
+  min-width: 140px;
+  padding: 0 20px 0 0;
+}
+
+
+.news-list .item .category span{
+  background-color: #777777;
+  color: #FFF;
+  text-align: center;
+  display: inline-block;
+  padding: 5px 20px;
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+
+
+.news-list .item .title{
+  margin: 0;
+  width: 100%;
+}
+.news-list .item a:hover .title{
+  color: #00F;
+}
+
+
+
+/* 以下お問い合わせ */
+
+.contact {
+width: 100%;
+height: 400px;
+background-size: cover;
+box-sizing: border-box;
+background-image: url(../img/contact_vis.jpg);
+width: 100%;
+}
+
+.contactus h7 {
+  font-family: 'Montserrat';
+  font-weight: 100;
+  font-size: 8rem;
+  letter-spacing: 0.2em;
+  color: #fff;
+  text-align: center;
+  display: block;
+  padding-top: 40px;
+}
+
+
+.contactus p {
+  font-size: 2.2rem;
+  color: #fff;
+  text-align: center;
+  display: block;
+  letter-spacing: 0.1em;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+
+/* 以下、ボックス */
+.contact .contactwrapper {
+  width: 45%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* 幅を短くして全体を真ん中に。 */
+
+.contact .contactwrapper ul {
+  display: flex;
+  justify-content:space-between
+
+}
+
+
+.contact .contactwrapper ul li{
+  width: 130px;
+  height: 120px;
+
+  padding: 20px;
+  box-sizing: border-box;
+  border: 1px solid #fff;
+
+  /* 拡大のため */
+  cursor: pointer;
+  overflow: hidden;
+  }
+  
+ .contact .contactwrapper p{
+    font-size: 1.4rem;
+    font-weight:500;
+    color: #fff;
+    text-align: center;
+    line-height: 3;
+    white-space: nowrap;
+
+  }
+
+  .contact .icon img {
+    height: auto;
+    transition: .3s ease;
+  }
+
+  .contact .icon img:hover {
+  transform: scale(1.1);
+} 
+
+
+
+
+  /* footer */
+
+ 
+
+  .footer_wrapper {  
+    color: #fff;
+  }
+
+.footer_wrapper .top {
+  background-color: #828282;
+}
+
+footer h4 {
+  font-size: 2rem;
+  font-weight: 300;
+  font-family: 'Montserrat';
+  text-align: center;
+  padding-top: 50px;
+  letter-spacing: 0.2em;
+
+}
+.footer_wrapper .top .top_content {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  /* background-color:#828282; */
+  margin: 0 auto;
+  padding-bottom: 50px;
+  font-size: 1.4rem;
+  /* text-decoration: none */
+}
+
+.footer_wrapper .top .top_content section p{
+  font-weight: 500;
+  text-decoration: none;
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+
+.footer_wrapper .top .top_content section a{
+  color: #fff; 
+  
+} 
+
+.footer_wrapper .top .top_content section li{
+  margin-left: 0px;
+  box-sizing: border-box;
+
+}
+
+
+
+.footer_wrapper .bottom {
+  background-color: #313030;
+
+}
+
+
+.footer_wrapper .bottom ul{
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  margin: 0 auto;
+}
+
+
+.footer_wrapper .bottom ul li a {
+  color: #fff;
+line-height: 5;
+}
+
+
+.footer_wrapper .bottom p {
+  font-size: 2rem;
+  /* text-align: center; */
+}
+
+
+
+
+/* -----住まい sumai-----**/
+
+
+
+
+/* 以下、キービジュアル */
+
+.sumai_1 .visual_img {
+  width: 100%;
+  height: 420px;
+  background-image: url(../img/sumai.jpg);
+  background-size: cover;
+  box-sizing: border-box;
+  position: relative;
+}
+
+
+.sumai_1 .visual_img p, .kenchiku .visual_img p, .kigyo .visual_img p {
+  font-size: 6rem;
+  font-weight: 100;
+  font-family: 'Zen Kaku Gothic Antique';
+  color: #fff;
+  text-shadow: 2px 2px 4px #313030;
+  letter-spacing: 0.1em;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  text-align: center;
+  /* background-color: #000; */
+  
+}
+/* キービジュアル終了 */
+
+
+/* 以下、こだわり */
+.sumai_1 h2, .sumai_1 h3,.kenchiku .syokai h2  {
+  font-family: 'Zen Kaku Gothic Antique';
+}
+
+.kodawari h2, .kenchiku .syokai h2, .kigyo h2  {
+  font-size: 3rem;
+  line-height: 2.8rem;
+  font-family: 'Zen Kaku Gothic Antique';
+  font-weight: 500;
+  margin-top: 100px;
+
+}
+
+.kodawari p, .kenchiku .syokai p {
+  width: 750px;
+  font-family: 'Zen Kaku Gothic Antique';
+  line-height: 4.8rem;
+  font-size: 1.6rem;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 36px;
+  
+}
+
+/* こだわり終了 */
+
+
+.sumai_1 h3 {
+  font-size: 3rem;
+  letter-spacing:2px ;
+  /* margin-top: 100px; */
+  /* margin-bottom: 100px; */
+  border-bottom: 3px solid #777777;
+  line-height: 2;
+  width: 200px;
+
+  display: block;
+  margin: 0 auto;
+  margin-top: 90px;
+
+}
+
+
+
+
+.sumai_1 section  h4{
+  font-size: 3rem;
+  font-weight: 400;
+  margin: 0 auto;
+  font-family: 'Zen Kaku Gothic Antique';
+
+
+}
+  
+/* 以下、注文住宅のshowcase */
+
+.sumai_1 .cyumon .showcase {
+  background-color: #F1EFE6;
+  width: 80%;
+  height: 1100px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.sumai_1 .cyumon .showcase .jiyu,  .sumai_1 .cyumon .showcase .kikaku {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* 両方本文位置調整 */
+.sumai_1 .cyumon .showcase .jiyu .jiyu_2 , .sumai_1 .cyumon .showcase .kikaku .kikaku_2 {
+background-color: rgba(250, 250, 250, 0.8);
+padding: 40px 40px 0px 60px;
+box-sizing: border-box;
+margin-left: -180px;
+margin-top: 230px;
+width: 532px;
+height: 270px;
+box-shadow: 10px 10px 10px #b0afaf;
+
+
+}
+
+/* 規格住宅の本文位置調整 */
+
+.sumai_1 .cyumon .showcase .kikaku .kikaku_2 {
+  margin-right: 10px;
+}
+
+
+
+/* 本文の共通設定 */
+.sumai_1 .cyumon .showcase p, .sumai_1 .bunjyo p {
+  font-size: 1.4rem;
+  color: #333;
+  line-height: 4.2rem;
+  margin-top: 20px;
+  font-family: 'Zen Kaku Gothic Antique';
+  text-align: justify;
+
+
+  
+}
+
+
+/* 写真の調整 */
+.sumai_1 .showcase .jiyu img {
+  margin-left: 60px;
+  margin-top: 80px;
+}
+
+
+.sumai_1 .showcase .kikaku img {
+  box-shadow: 2px 2px 3px #6d6d6d;
+  margin-left: 60px;
+  margin-top: 80px;
+}
+
+/* 以下、住宅を探すボタン */
+
+/* 位置調整 */
+
+
+.sumai_1 .cyumon .btn a, .sumai_1 .bunjyo .btn a {
+  /* margin: auto; */
+  /* bottom: -100px; */
+  /* positionを使ったものを真ん中寄せしたいときは、leftrightを0 */
+  /* にしてmarginをautoする */ 
+
+  font-size: 1.4rem;
+  font-family: 'Montserrat';
+  background-color: #777777;
+  width: 150px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 1px 1px 3px #313030;
+  font-family: 'Zen Kaku Gothic Antique';
+  letter-spacing: 0.3em;
+  padding: 5px 5px 5px 20px;
+  margin: 0 auto;
+  display: block;
+  margin-top: 70px;
+}
+
+
+
+.sumai_1 .btn a:hover {
+  background-color: #313030;
+
+  transition: 0.3s;
+}
+
+
+/* 注文終了*/
+
+
+/* 以下、分譲住宅 */
+
+/* 分譲住宅の位置調整 */
+
+.sumai_1 .bunjyo h3 {
+  margin-top: 120px;
+}
+.sumai_1 .bunjyo .showcase {
+  background-color: #F1EFE6;
+  width: 80%;
+  height: 550px;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 150px;
+}
+
+.sumai_1 .bunjyo .showcase .bunjyo_2  {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* 本文位置調整 */
+.sumai_1 .bunjyo .showcase .bunjyo_3 {
+  background-color: rgba(250, 250, 250, 0.8);
+  padding: 40px 40px 0px 60px;
+  box-sizing: border-box;
+  margin-left: -200px;
+  margin-top: 150px;
+  width: 500px;
+  height: 240px;
+  box-shadow: 10px 10px 10px #b0afaf;
+}
+
+/* 画像の位置調整 */
+.sumai_1 .bunjyo .showcase .bunjyo_2 img {
+  box-shadow: 2px 2px 3px #6d6d6d;
+  margin-left: 60px;
+  margin-top: 80px;
+
+}
+/* 分譲終了 */
+
+
+
+.sumai_1 .contact h3 {
+  font-size: 2rem;
+  font-weight: 500 ;
+  letter-spacing: 0px;
+display: block;
+text-align: center;
+border-bottom: none;
+font-family:'Noto Sans JP',sans-serif;
+margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.sumai_1 .contact .message {
+  font-size: 1.6rem;
+  text-align: center;
+  /* background-color: #313030; */
+  margin-bottom: 40px;
+}
+
+.sumai_1  .contact .contactwrapper {
+  width: 45%;
+  margin: 0 auto;
+  text-align: center;
+}
+/* こだわり終了 */
+
+
+
+
+
+/* -----建築実例 kenchiku-----**/
+
+
+
+
+
+
+.kenchiku .visual_img {
+  width: 100%;
+  height: 420px;
+  background-image: url(../img/kenchiku.jpg);
+  background-size: cover;
+  /* padding-top: 150px;
+  padding-left: 150px; */
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* 新着実例一覧の文字 */ 
+.kenchiku .jitsurei .title h3 {
+  font-weight: 500;
+  font-family:'Zen Kaku Gothic Antique';
+}
+/* 画像の配置 */
+.kenchiku .showcase {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 900px;
+  margin: 0 auto;
+} 
+
+/* 親にmargin 0 autoかければ子要素は真ん中寄席になる */
+
+
+
+
+.kenchiku .showcase section  {
+  width: 407px;
+  margin: 40px 0;
+
+}
+
+.kenchiku .showcase section .content p{
+  font-size: 1.6rem;
+  margin: 20px 0 10px 0;
+  font-family: 'Zen Kaku Gothic Antique';
+
+}
+
+
+/* ハッシュタグ */
+
+.kenchiku .hasshu p {
+  font-family: 'Zen Kaku Gothic Antique';
+  font-size: 1.2rem;
+  color: #396020;
+  padding: 3px 10px;
+  border: 1px solid #c0ceb7;
+  border-radius: 5px;
+  background-color: #c0ceb7;
+  display: inline-block;
+  margin-right: 5px;
+  margin-left: 5px;
+
+}
+
+.kenchiku .contact {
+  margin-top: 80px;
+}
+
+
+
+/* 建築実例終了 */
+
+
+
+
+
+/* -----企業情報 kigyo-----**/
+
+
+
+
+
+.kigyo .visual_img{
+  width: 100%;
+  height: 420px;
+  background-image: url(../img/kigyo_key.jpg);
+  background-size: cover;
+  /* padding-top: 150px;
+  padding-left: 150px; */
+  box-sizing: border-box;
+  position: relative;
+
+}
+
+.kigyo h2 {
+  margin-bottom: 100px;
+}
+
+.kigyo .koumoku figcaption {
+  font-family: 'Zen Kaku Gothic Antique';
+  background-color: #E6E6E6;
+  width: 340px;
+  color: #000;
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 15px 0;
+  
+}
+
+.kigyo .koumoku figure {
+  margin-bottom: 40px;
+}
+
+.kigyo .koumoku {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 1100px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+
+/* 各項目画像の拡大 */
+.kigyo .topmessage, .kigyo .gaiyo, .kigyo .rinen, .kigyo .jigyo, .kigyo .sustainability2, .kigyo .saiyo {
+  width: 340px;
+  overflow: hidden;
+  height: 255px;
+
+}
+.kigyo .topmessage img,
+.kigyo .gaiyo img, .kigyo .rinen img, .kigyo .jigyo img, .kigyo .sustainability2 img, .kigyo .saiyo img   
+{
+  transition: .5s all;
+  height: 255px;
+}
+
+
+.kigyo .topmessage img:hover,
+.kigyo .gaiyo img:hover, .kigyo .rinen img:hover, .kigyo .jigyo img:hover, .kigyo .sustainability2 img:hover, .kigyo .saiyo img:hover   
+ 
+{
+  transform: scale(1.1,1.1);
+  transition: .5s all;
+}
+
+/* 
+.kigyo figcaption {
+  margin-top: 0;
+} */
+
